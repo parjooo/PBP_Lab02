@@ -9,9 +9,9 @@ app_name = 'wishlist'
 
 urlpatterns = [
     path('', show_wishlist, name='show_wishlist'),
-    path('xml/', show_xml, name='show_xml'),
-    path('json/', show_xml, name='show_json'),
-    path('json/<int:id>', show_json_by_id, name='show_json_by_id'),
-    path('xml/<int:id>', show_xml_by_id, name='show_xml_by_id'),
+    path('wishlist/xml/', show_xml, name='show_xml'),
+    path('wishlist/json/', show_json, name='show_json'),
+    path('wishlist/json/<int:id>', show_json_by_id, name='show_json_by_id'),
+    path('wishlist/xml/<int:id>', show_xml_by_id, name='show_xml_by_id'),
     path('wishlist/', show_wishlist, name='show_wishlist')
 ]
